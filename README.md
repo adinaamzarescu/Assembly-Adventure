@@ -59,13 +59,11 @@ they are equal, the sorting will be made in lexicographical order.
 The main 2 functions:
 
 `void get_words(char *s, char **words, int number_of_words);`
-
-   -> receives the text (string array) in which the program saves
+   * receives the text (string array) in which the program saves
       the words that need to be sorted. 
       
 `void sort(char **words, int number_of_words, int size);`
-
-   -> will sort the words. size = size of a word
+   * will sort the words. size = size of a word
    
    
 Aux functions:
