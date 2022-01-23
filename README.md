@@ -21,7 +21,7 @@ Implementation:
 
  * The function has 2 while loops
     * while1: Finds the first node and saves it, 
-      loops until there are no nodes left
+      loops until there are no nodes left, 
       contains the second while
     * while2: sorts the nodes and links them.
        The sorting is done by testing the values,
