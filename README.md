@@ -4,6 +4,8 @@ The final Univeristy project for the _Introduction to computer organization and 
 
 This project has 4 tasks and 2 bonus tasks (64bit-assembly and special instruction cpuid).
 
+______________________________________________________________________________________________________________
+
 ### `Task 1 - Album sort`
 
 The main idea was to implement the **struct node* sort(int n, struct node* node)** function.
@@ -27,6 +29,8 @@ Implementation:
        The sorting is done by testing the values,
        the linking is done by storing in **[esi + ecx * 8 + 4]**
        the adress.
+      
+______________________________________________________________________________________________________________
 
 ### `Task 2 - Turing machine`
 
@@ -48,6 +52,8 @@ The idea was to cound in **ebx** how many **open** brackets there are
 and in **ecx** how many **closed** brackets there are.
 
 If the two registers store the same value, the brackets are balanced.
+
+______________________________________________________________________________________________________________
 
 ### `Task 3 - Word sort`
 
@@ -74,6 +80,8 @@ Aux functions:
 * `ft_strcmp`
 * `ft_strlen`
 
+______________________________________________________________________________________________________________
+
 ### `Task 4 - Bank accounts`
 
 The program implements more recursive functions to find how much money there is in the banck account.
@@ -92,6 +100,8 @@ Details:
 * the divisions will be done on whole numbers
 * the results are integers
 
+______________________________________________________________________________________________________________
+
 ### `Bonus tasks`
 
 1. Assembly 64bit
@@ -102,3 +112,17 @@ Details:
     - v1 = 1 1 1 1
     - v2 = 2 2
     - interwine: 1 2 1 2 1 1
+
+2. Special Instructions - CPUID
+    
+    CPUID is a special instruction that shows processor information.
+    This function doesn't receive parameters, it is based on the
+    **eax** register and, in some cases, **ecx**.
+    
+    Aux functions:
+    * `features`
+        It checks if _vmx_ is avalable, if _rdrand_ is set and if _avx_ is set.
+    * `l2_cache_info`
+        Sets eax to 0x80000006 and executes cpuid and gets the cache_size.
+       
+______________________________________________________________________________________________________________
