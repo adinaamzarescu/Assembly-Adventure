@@ -73,3 +73,32 @@ Aux functions:
     * CheckS the lexicographical order of the two strings s1 and s2
 * `ft_strcmp`
 * `ft_strlen`
+
+### `Task 4 - Bank accounts`
+
+The program implements more recursive functions to find how much money there is in the banck account.
+
+The 3 recursive functions that will have a value as a parameter:
+
+* expression(char *p, int *i) - evaluates **term + term** or **term - term**
+* term(char *p, int *i) -  evaluates **factor * factor** or **factor / factor**
+* factor(char *p, int *i) - evaluates **(expression)** or **number** (digit array)
+
+Details:
+
+* p is the character array
+* i is the current position
+* the numbers are above 0 and whole, but after the operations they can be negative
+* the divisions will be done on whole numbers
+* the results are integers
+
+### `Bonus tasks`
+
+1. Assembly 64bit
+    
+    This program interwines 2 arrays.
+    
+    Example:
+    - v1 = 1 1 1 1
+    - v2 = 2 2
+    - interwine: 1 2 1 2 1 1
