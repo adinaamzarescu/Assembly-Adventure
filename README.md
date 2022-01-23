@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 The main idea was to implement the **struct node* sort(int n, struct node* node)** function.
 This function links the nodes in ascending order and returns the adress of the first node.
-The structure of the array should not be moddified.
+The structure of the array should not be modified.
 
 The structure:
 
