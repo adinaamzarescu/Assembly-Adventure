@@ -4,7 +4,7 @@ The final Univeristy project for the _Introduction to computer organization and 
 
 This project has 4 tasks and 2 bonus tasks (64bit-assembly and special instruction cpuid).
 
-# `Task 1 - Album sort`
+### `Task 1 - Album sort`
 
 The main idea was to implement the **struct node* sort(int n, struct node* node)** function.
 This function links the nodes in ascending order and returns the adress of the first node.
@@ -28,7 +28,7 @@ Implementation:
        the linking is done by storing in **[esi + ecx * 8 + 4]**
        the adress.
 
-`Task 2 - Turing machine`
+### `Task 2 - Turing machine`
 
 This task has 2 separate tasks. Tests 1-5 check _the first part_
 and tests 6-10 _the second part_.
@@ -49,7 +49,7 @@ and in **ecx** how many **closed** brackets there are.
 
 If the two registers store the same value, the brackets are balanced.
 
-`Task 3 - Word sort`
+### `Task 3 - Word sort`
 
 Based on some given delimiters the program sorts the words using 
 **qsort**.
