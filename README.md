@@ -39,17 +39,17 @@ and tests 6-10 _the second part_.
 
 In this task I had to **only use the stack**. 
 
-Task2 - first part
+* Task2 - first part
 
-The program finds the least common multiple.
-The main idea was to find the greatest common factor and then divide
-the _a * b_ by it.
+    The program finds the least common multiple.
+    The main idea was to find the greatest common factor and then divide
+    the _a * b_ by it.
 
-Task2 - second part
+* Task2 - second part
 
-The program checks if a serie of brackets are balanced.
-The idea was to cound in **ebx** how many **open** brackets there are
-and in **ecx** how many **closed** brackets there are.
+    The program checks if a series of brackets are balanced.
+    The idea was to cound in **ebx** how many **open** brackets there are
+    and in **ecx** how many **closed** brackets there are.
 
 If the two registers store the same value, the brackets are balanced.
 
