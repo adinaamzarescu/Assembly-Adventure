@@ -1,6 +1,6 @@
 # Assembly-Adventure
 #### Copyright 2022 Adina-Maria Amzarescu
-The final Univeristy project for the _Introduction to computer organization and assembly_ language course
+The final Univeristy project for the _Introduction to computer organization and assembly language_ course
 
 This project has 4 tasks and 2 bonus tasks (64bit-assembly and special instruction cpuid).
 
@@ -84,7 +84,7 @@ ________________________________________________________________________________
 
 ### `Task 4 - Bank accounts`
 
-The program implements more recursive functions to find how much money there is in the banck account.
+The program implements more recursive functions to find how much money there is in the bank account.
 
 The 3 recursive functions that will have a value as a parameter:
 
