@@ -11,7 +11,7 @@ cmmmc:
 	pop 	ebp
 ;; Save the callee-saved registers
 	push	dword[ebp + 8]
-	pop		eax						;; Set eax to the first argument
+	pop	eax						;; Set eax to the first argument
 	push 	dword[ebp + 12]
 	pop 	ebx						;; Set ebx to the second argument
 ;; Save the 2 numbers
@@ -23,11 +23,11 @@ cmmmc:
 ;; Compare the two numbers
 	cmp 	eax, ebx
 ;; If a = b
-	je		.cmmmdcFound
+	je	.cmmmdcFound
 ;; If b > a
-	jg		.caseOne
+	jg	.caseOne
 ;; If a > b
-	jl		.caseTwo
+	jl	.caseTwo
 
 .caseOne:
 	;; b = b - a
@@ -67,8 +67,8 @@ cmmmc:
 	inc 	edi
 ;; Compare the result of the substraction
 	cmp 	edx, 0
-	jg 		.divide
-	je 		.end
+	jg 	.divide
+	je 	.end
 
 .end:
 ;; Save the least common multiple in eax
