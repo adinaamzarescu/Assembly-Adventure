@@ -7,13 +7,13 @@ sort:
 ;; Create a new stack frame
 	enter 	0, 0
 ;; Initialise the needed registers
-	mov     ecx, [ebp + 8]  			;;  Initialise ecx to the first parameter n
-    mov     esi, [ebp + 12] 			;;  Initialise edi to the second parameter nodes
+	mov     ecx, [ebp + 8]  				;;  Initialise ecx to the first parameter n
+    	mov     esi, [ebp + 12] 				;;  Initialise edi to the second parameter nodes
 ;; Since the sort will be made from 0 to n - 1
 	dec 	ecx
 ;; If there is only one node, end
 	cmp 	ecx, 0
-	jl 		.end
+	jl 	.end
 .while1:
 ;; Copy the number of values, n
 	mov 	eax, [ebp + 8]
@@ -22,7 +22,7 @@ sort:
 ;; Find the min node in order to return it
 	cmp 	dword[esi + ecx * 8], 1
 ;; If found, save it
-	je 		.save
+	je 	.save
 ;; If not, keep searching
 	jne 	.search
 .save:
@@ -43,22 +43,22 @@ sort:
 .search:
 ;; If ecx is 0 then the program will end 
 	cmp 	ecx, 0
-	jl 		.end
+	jl 	.end
 .while2:
 ;; If eax is 0, sort the values
 	cmp 	eax, 0
-	jl 		.decrement
+	jl 	.decrement
 	jge 	.selectionSort
 .selectionSort:
 ;; Store the value in edx
-	xor		edx, edx 
+	xor	edx, edx 
 	mov 	edx, [esi + ecx * 8]
 ;; Increment edx to get the next value
 	inc 	edx
 ;; Compare it to the previous value
 	cmp 	edx, [esi + eax * 8]
 ;; If they are equal, link them
-	je 		.link
+	je 	.link
 ;; Decrement eax and go back to the second while
 	dec 	eax
 	jmp 	.while2
