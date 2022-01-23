@@ -68,7 +68,8 @@ The main 2 functions:
    
 Aux functions:
 
-`compare_func`
-    ->
-`ft_strcmp`
-`ft_strlen`
+* `compare_func`
+    * CheckS if the length of the two strings is different
+    * CheckS the lexicographical order of the two strings s1 and s2
+* `ft_strcmp`
+* `ft_strlen`
