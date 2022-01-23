@@ -48,7 +48,7 @@ In this task I had to **only use the stack**.
 * Task2 - second part
 
     The program checks if a series of brackets are balanced.
-    The idea was to cound in **ebx** how many **open** brackets there are
+    The idea was to count in **ebx** how many **open** brackets there are
     and in **ecx** how many **closed** brackets there are.
 
 If the two registers store the same value, the brackets are balanced.
