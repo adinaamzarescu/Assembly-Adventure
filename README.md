@@ -1,5 +1,5 @@
 # Assembly-Adventure
-#### Copyright 2022 Adina-Maria Amzarescu
+### Copyright 2022 Adina-Maria Amzarescu
 The final Univeristy project for the _Introduction to computer organization and assembly language_ course
 
 This project has 4 tasks and 2 bonus tasks (64bit-assembly and special instruction cpuid).
