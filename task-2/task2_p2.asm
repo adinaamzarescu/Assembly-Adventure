@@ -8,7 +8,7 @@ par:
 ;; Create a new stack frame
 	push    ebp
 	push	esp
-	pop		ebp
+	pop	ebp
 ;; Save the string str in eax
 	push 	dword [ebp + 12]
 	pop 	eax
@@ -18,7 +18,7 @@ par:
 	xor 	ecx, ecx
 ;; Loop strlen(str) times
 	cmp 	dword [ebp + 8], 0
-	jg 		.while
+	jg 	.while
 .while:
 ;; Check if the string ended
 	cmp 	dword [ebp + 8], 0
@@ -27,11 +27,11 @@ par:
 ;; Compare the first bracket with '('
 	cmp 	byte [eax], 40
 ;; Increment the number of open brackets
-	je 		.increment_open
+	je 	.increment_open
 ;; Compare the first bracket with ')'
 	cmp 	byte [eax], 41
 ;; Increment the number of closed brackets
-	je 		.increment_closed
+	je 	.increment_closed
 
 .increment_open:
 	inc 	ebx
@@ -53,7 +53,7 @@ par:
 	xor 	eax, eax
 ;; Compare the number of open and closed brackets 
 	cmp 	ebx, ecx
-	je 		.equal
+	je 	.equal
 	jmp 	.not_equal
 .equal:
 ;; If ebx = ecx the brackets are balanced 
